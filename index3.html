@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    /* Estilo general de la sección Carreras */
+.carreras {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.carreras .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carreras h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+/* Estilo de la cuadrícula */
+.carreras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo de las tarjetas */
+.carrera-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.carrera-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carrera-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.carrera-card h3 {
+  font-size: 1.5em;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.carrera-card p {
+  font-size: 1em;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.carrera-card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carrera-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .carreras h2 {
+    font-size: 1.8em;
+  }
+
+  .carrera-card {
+    text-align: center;
+  }
+
+  .carrera-card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+  </style>
+<body>
+    <section id="carreras" class="carreras">
+        <div class="container">
+          <h2>Elige la carrera que mejor se adapte a ti</h2>
+          <div class="carreras-grid">
+            <!-- Carrera 1 -->
+            <div class="carrera-card">
+              <img src="img/ing.jpg" alt="Carrera 1">
+              <h3>Ingeniería en Sistemas</h3>
+              <p>
+                Sesiones prácticas en programación, gestión de software y más.
+              </p>
+              <button>Más Información</button>
+            </div>
+            <!-- Carrera 2 -->
+            <div class="carrera-card">
+              <img src="img/admin.jpg" alt="Carrera 2">
+              <h3>Administración de Empresas</h3>
+              <p>
+                Aprende liderazgo organizacional y gestión eficiente.
+              </p>
+              <button>Más Información</button>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

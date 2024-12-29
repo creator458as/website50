@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* General para la sección Nosotros */
+.nosotros {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.nosotros .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nosotros h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilo del contenido */
+.nosotros .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Texto */
+.nosotros .content .text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.nosotros .content .text p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Imagen */
+.nosotros .content .image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.nosotros .content .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nosotros .content {
+    flex-direction: column;
+  }
+
+  .nosotros .content .image {
+    margin-top: 20px;
+  }
+}
+
+.nosotros .content .image img {
+  width: 100%; /* La imagen ocupará todo el ancho disponible */
+  max-width: 400px; /* Limita el ancho máximo a 400px */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Asegura que la imagen se recorte adecuadamente si es necesario */
+}
+
+
+</style>
+<body>
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+          <h2>Sobre Nosotros</h2>
+          <div class="content">
+            <div class="text">
+              <p>
+                En nuestra institución, nos dedicamos a ofrecer una educación de excelencia,
+                combinando innovación, valores y una enseñanza de calidad para preparar a
+                nuestros estudiantes para el futuro.
+              </p>
+              <p>
+                Nuestro equipo docente está compuesto por profesionales altamente calificados
+                que trabajan comprometidos con el desarrollo integral de los alumnos.
+              </p>
+            </div>
+            <div class="image">
+              <img src="img/insti.jpg" alt="Nuestra institución">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
